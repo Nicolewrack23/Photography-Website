@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  align-items: center;
+  min-height: 90vh;
+}
+.welcomeComponents {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.welcomeH1 {
+  margin: 0;
+  font-family: American Typewriter, serif;
+  letter-spacing: 0.1rem;
+}
+.welcomeP {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
