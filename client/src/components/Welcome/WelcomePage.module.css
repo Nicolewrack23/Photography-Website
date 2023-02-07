@@ -14,8 +14,20 @@
   margin: 0;
   font-family: American Typewriter, serif;
   letter-spacing: 0.1rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 .welcomeP {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: medium;
+}
+.background {
+  background-image: url("../Photos/photo.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
