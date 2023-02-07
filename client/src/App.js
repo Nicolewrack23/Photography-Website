@@ -1,11 +1,9 @@
-import WelcomePage from "./components/Welcome/WelcomePage";
-import GalleryPage from "./components/Gallery/GalleryPage";
+import NavigationMenu from "./components/Navigation/NavigationMenu";
 
 function App() {
   return (
     <div>
-      <WelcomePage />
-      <GalleryPage />
+      <NavigationMenu />
     </div>
   );
 }
