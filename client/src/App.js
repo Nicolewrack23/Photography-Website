@@ -1,9 +1,9 @@
-import NavigationMenu from "./components/Navigation/NavigationMenu";
+import NavigationTopMenu from "./components/Navigation/NavigationTopMenu";
 
 function App() {
   return (
     <div>
-      <NavigationMenu />
+      <NavigationTopMenu />
     </div>
   );
 }

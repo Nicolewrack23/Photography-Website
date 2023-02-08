@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import styles from "./NavigationMenu.module.css";
+import styles from "./NavigationTopMenu.module.css";
 
-const WelcomePage = () => {
+const NavigationTopMenu = () => {
   const [icon, setIcon] = useState(styles.icon);
   const handleClick = () => {
     if (icon === styles.icon) {
@@ -26,4 +26,4 @@ const WelcomePage = () => {
     </>
   );
 };
-export default WelcomePage;
+export default NavigationTopMenu;
