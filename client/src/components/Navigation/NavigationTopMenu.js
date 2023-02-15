@@ -16,7 +16,7 @@ const NavigationTopMenu = () => {
   return (
     <>
       <div className={styles.responsive}>
-        <h2>Jay's Photography</h2>
+        <h2>Nicole's work</h2>
         <div className={icon} onClick={handleClick}>
           <div className={styles.bar1}></div>
           <div className={styles.bar2}></div>
