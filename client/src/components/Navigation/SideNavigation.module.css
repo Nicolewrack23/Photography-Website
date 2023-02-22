@@ -1,25 +1,29 @@
 .menu {
   color: aqua;
-  display: grid;
-  gap: 1rem;
-  list-style-type: none;
   padding: 1rem;
   position: absolute;
   z-index: 1;
 }
-.open {
-  background-color: cornflowerblue;
-  width: 40%;
-  transition: width 2s;
+.grid {
+  display: grid;
+  gap: 1rem;
+  padding: 0;
+  list-style-type: none;
 }
-.menuItem,
+.open {
+  width: 40%;
+  opacity: 1;
+}
 .closed {
-  background-color: sandybrown;
   width: 0;
   opacity: 0;
+}
+.open,
+.closed {
+  background-color: cornflowerblue;
+  height: 100vh;
   transition: width 2s, opacity 1s;
 }
-.menuItem,
-.open {
-  opacity: 1;
+.menu .closed {
+  display: none;
 }
