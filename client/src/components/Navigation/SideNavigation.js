@@ -1,39 +1,28 @@
 import React, { useState } from "react";
-import sideStyles from "./SideNavigation.module.css";
+import styles from "./SideNavigation.module.css";
 
-const NavigationTopMenu = () => {
-  const [icon, setIcon] = useState(sideStyles.icon);
+const SideMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => {
-    if (icon === sideStyles.icon) {
-      const change = sideStyles.change;
-
-      return setIcon(change);
-    } else {
-      const icon = sideStyles.icon;
-      return setIcon(icon);
-    }
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
     <>
-      <div className={sideStyles.responsive}>
-        <h2>Nicole's work</h2>
-        <div className={icon} onClick={handleClick}>
-          <div className={sideStyles.bar1}></div>
-          <div className={sideStyles.bar2}></div>
-          <div className={sideStyles.bar3}></div>
-        </div>
-      </div>
-
-      <div className={icon}>
-        <div className={sideStyles.sideMenu}>
-          <p className={sideStyles.hello}>hello</p>
-          <p className={sideStyles.hello}>hello</p>
-          <p className={sideStyles.hello}>hello</p>
-        </div>
-      </div>
+      <button className={styles.menuButton} onClick={toggleMenu}>
+        {isOpen ? "Close" : "Open"} Menu
+      </button>
+      <ul
+        className={`${styles.menu} ${isOpen ? styles.open : styles.closed}`}
+        onClick={toggleMenu}
+      >
+        <li className={styles.menuItem}>Home</li>
+        <li className={styles.menuItem}>About</li>
+        <li className={styles.menuItem}>Contact</li>
+      </ul>
     </>
   );
 };
-export default NavigationTopMenu;
+
+export default SideMenu;
