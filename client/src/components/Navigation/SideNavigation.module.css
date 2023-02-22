@@ -4,6 +4,8 @@
   gap: 1rem;
   list-style-type: none;
   padding: 1rem;
+  position: absolute;
+  z-index: 1;
 }
 .open {
   background-color: cornflowerblue;
