@@ -13,14 +13,16 @@ const SideMenu = () => {
       <button className={styles.menuButton} onClick={toggleMenu}>
         {isOpen ? "Close" : "Open"} Menu
       </button>
-      <ul
+      <div
         className={`${styles.menu} ${isOpen ? styles.open : styles.closed}`}
         onClick={toggleMenu}
       >
-        <li className={styles.menuItem}>Home</li>
-        <li className={styles.menuItem}>About</li>
-        <li className={styles.menuItem}>Contact</li>
-      </ul>
+        <ul className={styles.grid}>
+          <li className={styles.menuItem}>Home</li>
+          <li className={styles.menuItem}>About</li>
+          <li className={styles.menuItem}>Contact</li>
+        </ul>
+      </div>
     </>
   );
 };
