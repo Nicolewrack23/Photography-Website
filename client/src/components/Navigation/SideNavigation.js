@@ -10,9 +10,9 @@ const SideMenu = () => {
 
   return (
     <>
-      <button className={styles.menuButton} onClick={toggleMenu}>
-        {isOpen ? "Close" : "Open"} Menu
-      </button>
+      <div className={styles.menuButton}>
+        <button onClick={toggleMenu}>{isOpen ? "X" : "☰"} </button>
+      </div>
       <div
         className={`${styles.menu} ${isOpen ? styles.open : styles.closed}`}
         onClick={toggleMenu}
