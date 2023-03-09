@@ -4,6 +4,14 @@
   position: absolute;
   z-index: 1;
 }
+.menuButton {
+  display: grid;
+  justify-items: center;
+  justify-content: start;
+  padding: 0.5rem;
+  background-color: azure;
+  font-size: x-large;
+}
 .grid {
   display: grid;
   gap: 1rem;
