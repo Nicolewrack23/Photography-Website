@@ -1,37 +1,62 @@
+.menuButton {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  justify-content: end;
+  padding: 1rem;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+.nameGrid,
+.buttonGrid {
+  display: grid;
+  align-items: center;
+  width: 100%;
+}
+.name {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2rem;
+}
+.nameGrid {
+  justify-content: start;
+}
+.buttonGrid {
+  justify-content: end;
+}
+.buttonStyles {
+  width: 3rem;
+  font-size: 2rem;
+  border: none;
+  margin: 0 auto;
+  background-color: lightgray;
+}
 .menu {
-  color: aqua;
+  color: black;
   padding: 1rem;
   position: absolute;
   z-index: 1;
-}
-.menuButton {
-  display: grid;
-  justify-items: center;
-  justify-content: start;
-  padding: 0.5rem;
-  background-color: azure;
-  font-size: x-large;
+  top: 4.3rem;
 }
 .grid {
   display: grid;
   gap: 1rem;
   padding: 0;
   list-style-type: none;
+  justify-items: center;
 }
 .open {
-  width: 40%;
+  width: 100%;
   opacity: 1;
 }
 .closed {
   width: 0;
   opacity: 0;
+  padding: 0;
 }
 .open,
 .closed {
-  background-color: cornflowerblue;
-  height: 100vh;
+  background-color: lightgray;
   transition: width 2s, opacity 1s;
-}
-.menu .closed {
-  display: none;
 }
