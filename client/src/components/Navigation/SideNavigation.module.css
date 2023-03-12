@@ -60,3 +60,31 @@
   background-color: lightgray;
   transition: width 2s, opacity 1s;
 }
+@media (min-width: 40rem) {
+  .buttonGrid,
+  .open,
+  .closed {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    display: contents;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .menuButton {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 80rem) {
+  .menuButton {
+    width: 80%;
+  }
+}
+@media (min-width: 120rem) {
+  .menuButton {
+    width: 70%;
+  }
+}
