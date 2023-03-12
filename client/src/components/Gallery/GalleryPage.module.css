@@ -1,6 +1,3 @@
-.galleryH1 {
-  text-align: center;
-}
 .images {
   display: grid;
   grid-template-columns: 1fr;
@@ -16,11 +13,6 @@
   object-position: center;
 }
 @media (min-width: 40rem) {
-  .images {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 55rem) {
   .images {
     grid-template-columns: repeat(3, 1fr);
   }
