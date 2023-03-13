@@ -60,6 +60,17 @@
   background-color: lightgray;
   transition: width 2s, opacity 1s;
 }
+.menuItem {
+  color: grey;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menuItem:hover {
+  color: black;
+  font-weight: bold;
+  border-bottom: 3px solid blue;
+  transition: border-bottom 0.5s;
+}
 @media (min-width: 40rem) {
   .header {
     position: sticky;
