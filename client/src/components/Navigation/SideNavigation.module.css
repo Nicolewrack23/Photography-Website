@@ -61,6 +61,12 @@
   transition: width 2s, opacity 1s;
 }
 @media (min-width: 40rem) {
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+  }
   .buttonGrid,
   .open,
   .closed {
