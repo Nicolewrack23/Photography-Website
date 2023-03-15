@@ -89,6 +89,8 @@
   }
   .grid {
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    height: 1.5rem;
   }
   .menuButton {
     width: 90%;
