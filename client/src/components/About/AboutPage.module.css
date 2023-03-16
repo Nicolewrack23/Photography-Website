@@ -1,0 +1,39 @@
+.container {
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  max-width: 70%;
+  margin: 2rem auto;
+  background-color: white;
+
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.cardImage {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: bottom;
+}
+.textStyling {
+  padding: 1.5rem;
+}
+.heading {
+  margin-top: 0;
+}
+.icons {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 1.25rem;
+  background-image: linear-gradient(
+    120deg,
+    rgba(240, 147, 251, 0.3) 0%,
+    rgba(245, 87, 108, 0.3) 100%
+  );
+}
