@@ -37,3 +37,13 @@
     rgba(245, 87, 108, 0.3) 100%
   );
 }
+@media (min-width: 40rem) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cardImage {
+    aspect-ratio: 0;
+    min-height: 100%;
+  }
+}
