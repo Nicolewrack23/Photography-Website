@@ -7,8 +7,9 @@ const WelcomePage = () => {
     <>
       <div className={styles.container}>
         <div className={styles.card}>
-          <img className={styles.cardImage} src={image} alt="placeholder" />
-
+          <div className={styles.imageDiv}>
+            <img className={styles.cardImage} src={image} alt="placeholder" />
+          </div>
           <div className={styles.textStyling}>
             <p>Hi there, I am</p>
             <h1 className={styles.heading}>Nicole Wrack</h1>
