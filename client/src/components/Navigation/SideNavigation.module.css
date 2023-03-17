@@ -1,3 +1,9 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
 .menuButton {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -72,12 +78,6 @@
   transition: border-bottom 0.5s;
 }
 @media (min-width: 40rem) {
-  .header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: white;
-  }
   .buttonGrid,
   .open,
   .closed {
