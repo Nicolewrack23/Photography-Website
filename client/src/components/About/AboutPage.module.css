@@ -8,13 +8,17 @@
   justify-items: center;
 }
 .aboutWho {
+  font-size: 0.8rem;
   margin-bottom: 0rem;
 }
 .aboutH1 {
+  color: #427d86;
   margin-top: 0rem;
+  margin-bottom: 0.5rem;
 }
 .aboutGrid {
   display: grid;
+  margin-bottom: 1rem;
 }
 .aboutImage {
   max-width: 100%;
@@ -23,7 +27,25 @@
 .cardImage {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 16/9;
   object-fit: cover;
   object-position: center;
+}
+.aboutText {
+  margin: 0.5rem;
+}
+.textHighlight {
+  color: #427d86;
+  font-size: 1.25rem;
+}
+.textLow {
+  font-size: 0.9rem;
+}
+@media (min-width: 40rem) {
+  .aboutGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutText {
+    margin: auto;
+  }
 }
