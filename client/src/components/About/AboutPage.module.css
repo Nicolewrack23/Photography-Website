@@ -15,6 +15,8 @@
   color: #427d86;
   margin-top: 0rem;
   margin-bottom: 0.5rem;
+  font-weight: 300;
+  font-size: 2.5rem;
 }
 .aboutGrid {
   display: grid;
@@ -37,15 +39,35 @@
 .textHighlight {
   color: #427d86;
   font-size: 1.25rem;
+  margin-bottom: 0;
 }
 .textLow {
   font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 @media (min-width: 40rem) {
   .aboutGrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 80%;
+    margin: 0.5rem auto;
   }
   .aboutText {
     margin: auto;
+  }
+}
+@media (min-width: 80rem) {
+  .aboutH1 {
+    color: #427d86;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    font-size: 3.5rem;
+  }
+  .textHighlight {
+    font-size: 2rem;
+  }
+  .textLow {
+    font-size: 1.35rem;
   }
 }
