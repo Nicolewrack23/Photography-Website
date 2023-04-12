@@ -96,9 +96,18 @@
     width: 90%;
     margin: 0 auto;
   }
+  .leftAlign {
+    width: 100%;
+  }
+  .grid {
+    justify-items: end;
+  }
 }
 @media (min-width: 80rem) {
   .menuButton {
+    width: 80%;
+  }
+  .leftAlign {
     width: 80%;
   }
 }
