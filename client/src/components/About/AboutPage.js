@@ -1,28 +1,28 @@
 import styles from "./AboutPage.module.css";
-import image from "../Photos/photo.jpeg";
-import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import Image from "../Photos/photo.jpeg";
 
 const WelcomePage = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.card}>
-          <div className={styles.imageDiv}>
-            <img className={styles.cardImage} src={image} alt="placeholder" />
+        <div className={styles.AboutTitle}>
+          <p className={styles.aboutWho}>WHO AM I</p>
+          <h1 className={styles.aboutH1}>About Me</h1>
+        </div>
+        <div className={styles.aboutGrid}>
+          <div className={styles.aboutImage}>
+            <img className={styles.cardImage} src={Image} alt="placeholder" />
           </div>
-          <div className={styles.textStyling}>
-            <p>Hi there, I am</p>
-            <h1 className={styles.heading}>Nicole Wrack</h1>
-            <p>Software Developer</p>
+          <div>
             <p>
-              A quick bit about my self, The quick brown fox jumps over the lazy
-              dogs The quick brown fox jumped over the lazy dogs
+              I am a fitness trainer who's passionate about helping people
+              achieve their health and fitness goals.
             </p>
-            <button>Click Me</button>
-            <div>
-              <FaInstagram className={styles.icons} />
-              <FaFacebookF className={styles.icons} />
-            </div>
+            <p>
+              I've worked with students and professionals over the past seven
+              years. Weight training and cardio workouts are my main areas of
+              expertise.
+            </p>
           </div>
         </div>
       </div>
