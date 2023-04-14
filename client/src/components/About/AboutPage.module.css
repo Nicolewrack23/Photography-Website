@@ -55,10 +55,11 @@
   }
   .aboutText {
     align-self: center;
+    margin-left: 1rem;
   }
   .AboutTitle {
     margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .aboutGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -68,6 +69,15 @@
   }
   .aboutImage {
     margin: 0;
+  }
+  .textLow {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .textHighlight {
+    color: #427d86;
+    font-size: 1.5rem;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 80rem) {
