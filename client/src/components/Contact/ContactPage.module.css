@@ -69,10 +69,17 @@
 @media (min-width: 40rem) {
   .contactBox {
     grid-template-columns: 1fr 1fr;
+    place-self: center;
   }
   .contactCard {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    padding: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+@media (min-width: 80rem) {
+  .contactCard {
+    width: 70%;
   }
 }
