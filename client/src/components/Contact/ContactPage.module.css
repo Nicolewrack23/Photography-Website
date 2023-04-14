@@ -86,6 +86,9 @@
   .contactCard {
     width: 70%;
   }
+  .contactTitle {
+    font-size: 3.5rem;
+  }
   .contactSubTitle {
     font-size: 1.25rem;
     margin-top: 0.2rem;
