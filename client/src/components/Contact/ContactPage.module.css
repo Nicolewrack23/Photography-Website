@@ -1,3 +1,13 @@
+.form {
+  background-color: aqua;
+}
+.contactCard {
+  padding: 1rem;
+}
 .contactGrid {
   display: grid;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1rem;
 }
