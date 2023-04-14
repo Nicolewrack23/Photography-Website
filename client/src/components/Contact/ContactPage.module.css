@@ -37,18 +37,22 @@
   font-size: 2.5rem;
 }
 .contactSubTitle {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 0.2rem;
 }
 .contactInput {
+  margin-top: 0.25rem;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   border: 1.5px solid #427d86;
   border-radius: 0.25rem;
 }
 .contactInputMessage {
+  margin-top: 0.25rem;
+  border: 1.5px solid #427d86;
+  border-radius: 0.25rem;
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
 }
@@ -81,5 +85,9 @@
 @media (min-width: 80rem) {
   .contactCard {
     width: 70%;
+  }
+  .contactSubTitle {
+    font-size: 1.25rem;
+    margin-top: 0.2rem;
   }
 }
