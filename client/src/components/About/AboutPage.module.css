@@ -4,24 +4,12 @@
   align-content: center;
   margin: 2rem;
 }
-.AboutTitle {
-  display: grid;
-  justify-items: center;
-}
-.aboutWho {
-  font-size: 0.8rem;
-  margin-bottom: 0rem;
-}
 .aboutH1 {
   color: #427d86;
   margin-top: 0rem;
   margin-bottom: 0.5rem;
   font-weight: 300;
   font-size: 2.5rem;
-}
-.aboutGrid {
-  display: grid;
-  margin-bottom: 1rem;
 }
 .aboutImage {
   max-width: 100%;
