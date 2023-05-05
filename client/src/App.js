@@ -1,3 +1,4 @@
+import styles from "./App.module.css";
 import SideNavigation from "./components/Navigation/SideNavigation";
 import GalleryPage from "./components/Gallery/GalleryPage";
 import AboutPage from "./components/About/AboutPage";
@@ -8,8 +9,10 @@ function App() {
     <div>
       <SideNavigation />
       <GalleryPage />
-      <AboutPage />
-      <ContactPage />
+      <div className={styles.gradient}>
+        <AboutPage />
+        <ContactPage />
+      </div>
     </div>
   );
 }
