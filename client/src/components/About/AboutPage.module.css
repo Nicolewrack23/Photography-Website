@@ -1,84 +1,74 @@
 .container {
   display: grid;
+  height: 40vh;
+}
+.textPortion {
+  display: grid;
   justify-content: center;
   align-content: center;
-  margin: 2rem;
+  padding: 2rem;
 }
-.aboutH1 {
-  color: #427d86;
-  margin-top: 0rem;
-  margin-bottom: 0.5rem;
-  font-weight: 300;
-  font-size: 2.5rem;
-}
-.aboutImage {
+.heading {
+  display: grid;
+  grid-template-columns: min-content 2fr;
   max-width: 100%;
-  margin: 0.5rem;
 }
-.cardImage {
-  width: 100%;
+.camera {
+  width: 4rem;
   height: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
+  transform: scaleX(-1);
 }
-.aboutText {
-  margin: 0.5rem;
+.aboutH1 {
+  color: #6cabb2;
+  align-self: center;
+  margin: 0rem;
+  font-weight: 300;
+  font-size: 2rem;
 }
 .textHighlight {
-  color: #427d86;
+  color: #f1f6f4;
   font-size: 1.25rem;
+  margin-left: 0.5rem;
   margin-bottom: 0;
 }
 .textLow {
+  color: #f1f6f4;
   font-size: 0.9rem;
+  margin-left: 0.5rem;
   margin-top: 0.5rem;
 }
+.button {
+  margin-left: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  width: 8rem;
+  border: none;
+  font-size: 0.7rem;
+  color: #002438;
+  background-color: #6cabb2;
+}
+.image,
+.aboutImage {
+  display: none;
+}
+
 @media (min-width: 40rem) {
   .container {
-    display: block;
-    justify-content: none;
-    align-content: none;
-    margin: 0;
-  }
-  .aboutText {
-    align-self: center;
-    margin-left: 1rem;
-  }
-  .AboutTitle {
-    margin-top: 6rem;
-    margin-bottom: 1rem;
-  }
-  .aboutGrid {
-    grid-template-columns: repeat(2, 1fr);
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+    grid-template-columns: 1fr 1fr;
   }
   .aboutImage {
-    margin: 0;
+    display: block;
+    visibility: show;
+    max-width: 100%;
   }
-  .textLow {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
-  .textHighlight {
-    color: #427d86;
-    font-size: 1.5rem;
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 80rem) {
-  .aboutGrid {
-    width: 70%;
-  }
-  .aboutH1 {
-    font-size: 3.5rem;
-  }
-  .textHighlight {
-    font-size: 2rem;
-  }
-  .textLow {
-    font-size: 1.35rem;
+  .image {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: bottom;
   }
 }
