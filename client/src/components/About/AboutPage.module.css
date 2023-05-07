@@ -72,3 +72,14 @@
     object-position: bottom;
   }
 }
+@media (min-width: 100rem) {
+  .container {
+    height: 50vh;
+  }
+  .textPortion {
+    padding: 0 6rem;
+  }
+  .aboutImage {
+    max-height: 50vh;
+  }
+}
