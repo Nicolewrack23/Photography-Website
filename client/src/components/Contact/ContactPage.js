@@ -1,14 +1,33 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import Image from "../Gallery/beach.jpeg";
 import styles from "./ContactPage.module.css";
+import emailjs from "@emailjs/browser";
 
 const EmailForm = () => {
-  const [name] = useState("");
-  const [email] = useState("");
-  const [message] = useState("");
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_adospp7",
+        "template_l0e6gh8",
+        form.current,
+        "gDtbMPSl-OQ-q2MW9"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
-    <form className={styles.form}>
+    <form className={styles.form} ref={form} onSubmit={sendEmail}>
       <div className={styles.contactCard}>
         <div className={styles.contactBox}>
           <div className={styles.aboutImage}>
@@ -26,21 +45,21 @@ const EmailForm = () => {
             <input
               className={styles.contactInput}
               placeholder="Name"
+              name="user_name"
               type="text"
-              value={name}
             />
             <label>Email:</label>
             <input
               className={styles.contactInput}
               placeholder="Email address"
+              name="user_email"
               type="email"
-              value={email}
             />
             <label>Message:</label>
             <textarea
               className={`${styles.contactInput}, ${styles.contactInputMessage}`}
               placeholder="Your message"
-              value={message}
+              name="message"
             />
             <button className={styles.contactButton} type="submit">
               Send
