@@ -4,6 +4,7 @@
   max-width: 100%;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
 }
 .galleryImages {
   width: 100%;
