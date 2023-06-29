@@ -4,6 +4,7 @@
   width: 100%;
   background-color: white;
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.25);
+  z-index: 2;
 }
 .menuButton {
   display: grid;
@@ -72,11 +73,22 @@
   font-weight: bold;
   cursor: pointer;
 }
+.menuItem.active {
+  color: #3e8f98;
+}
 .menuItem:hover {
   color: black;
   font-weight: bold;
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #6cabaf;
   transition: border-bottom 0.5s;
+}
+.gradient {
+  background: rgb(241, 246, 244);
+  background: linear-gradient(
+    0deg,
+    rgba(241, 246, 244, 1) 0%,
+    rgba(0, 36, 56, 1) 100%
+  );
 }
 @media (min-width: 40rem) {
   .buttonGrid,
@@ -89,7 +101,7 @@
     display: contents;
   }
   .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     height: 1.5rem;
   }

@@ -13,7 +13,27 @@
   object-fit: cover;
   object-position: center;
 }
+.mobileGalleryImageContainer {
+  display: grid;
+}
+.mobileImages {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.galleryImagesContainer {
+  display: none;
+}
 @media (min-width: 40rem) {
+  .mobileGalleryImageContainer {
+    display: none;
+  }
+  .galleryImagesContainer {
+    display: grid;
+  }
   .images {
     grid-template-columns: repeat(3, 1fr);
   }
