@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Image from "../Gallery/beach.jpeg";
 import styles from "./ContactPage.module.css";
 import emailjs from "@emailjs/browser";
@@ -6,9 +6,11 @@ import emailjs from "@emailjs/browser";
 const EmailForm = () => {
   const form = useRef();
 
+  const [messageState, setMessageState] = useState("Send");
+
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setMessageState("Loading");
     emailjs
       .sendForm(
         "service_adospp7",
@@ -19,15 +21,30 @@ const EmailForm = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setMessageState("Sent");
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+  const handleFormChange = () => {
+    if (messageState === "Sent") {
+      setMessageState("Send");
+    }
+  };
+
+  useEffect(() => {
+    setMessageState("Send");
+  }, []);
 
   return (
-    <form className={styles.form} ref={form} onSubmit={sendEmail}>
+    <form
+      className={styles.form}
+      ref={form}
+      onChange={handleFormChange}
+      onSubmit={sendEmail}
+    >
       <div className={styles.contactCard}>
         <div className={styles.contactBox}>
           <div className={styles.aboutImage}>
@@ -62,7 +79,7 @@ const EmailForm = () => {
               name="message"
             />
             <button className={styles.contactButton} type="submit">
-              Send
+              {messageState}
             </button>
           </div>
         </div>
