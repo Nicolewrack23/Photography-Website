@@ -15,8 +15,12 @@ const SideMenu = () => {
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
+    const menuHeight = 80;
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      window.scrollTo({
+        top: section.offsetTop - menuHeight,
+        behavior: "smooth",
+      });
       toggleMenu();
     }
   };
@@ -28,10 +32,7 @@ const SideMenu = () => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          return (
-            rect.top <= window.innerHeight * 0.5 &&
-            rect.bottom >= window.innerHeight * 0.5
-          );
+          return rect.top <= window.innerHeight * 0.5;
         }
         return false;
       });
@@ -51,7 +52,7 @@ const SideMenu = () => {
       <div className={styles.header}>
         <div className={styles.menuButton}>
           <div className={styles.nameGrid}>
-            <h1 className={styles.name}>add name</h1>
+            <h1 className={styles.name}>Beach</h1>
           </div>
           <div className={styles.buttonGrid}>
             <button className={styles.buttonStyles} onClick={toggleMenu}>

@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   background-color: white;
@@ -24,8 +24,8 @@
 }
 .name {
   margin: 0;
-  font-weight: normal;
-  font-size: 2rem;
+  font-weight: 300;
+  font-size: 2.5rem;
 }
 .nameGrid {
   justify-content: start;
@@ -45,7 +45,7 @@
   padding: 1rem;
   position: absolute;
   z-index: 1;
-  top: 4.3rem;
+  top: 4.9rem;
 }
 .grid {
   display: grid;
