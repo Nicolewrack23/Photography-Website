@@ -13,10 +13,10 @@ const EmailForm = () => {
     setMessageState("Loading");
     emailjs
       .sendForm(
-        "service_adospp7",
-        "template_l0e6gh8",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        "gDtbMPSl-OQ-q2MW9"
+        process.env.REACT_APP_EMAILJS_USER_ID
       )
       .then(
         (result) => {
