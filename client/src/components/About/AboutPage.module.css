@@ -1,6 +1,5 @@
 .container {
   display: grid;
-  height: 40vh;
 }
 .textPortion {
   display: grid;
@@ -27,7 +26,7 @@
   align-self: center;
   margin: 0rem;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .textHighlight {
   color: #f1f6f4;
@@ -58,6 +57,7 @@
 @media (min-width: 40rem) {
   .container {
     grid-template-columns: 1fr 1fr;
+    height: 40vh;
   }
   .aboutImage {
     display: block;
