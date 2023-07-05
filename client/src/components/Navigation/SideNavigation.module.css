@@ -74,7 +74,8 @@
   cursor: pointer;
 }
 .menuItem.active {
-  color: #3e8f98;
+  color: black;
+  font-weight: bold;
 }
 .menuItem:hover {
   color: black;
