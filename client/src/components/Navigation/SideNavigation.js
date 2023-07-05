@@ -32,7 +32,10 @@ const SideMenu = () => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          return rect.top <= window.innerHeight * 0.5;
+          return (
+            rect.top <= window.innerHeight * 0.5 &&
+            rect.bottom >= window.innerHeight * 0.5
+          );
         }
         return false;
       });
