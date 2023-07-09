@@ -14,12 +14,10 @@ const WelcomePage = () => {
     <>
       <div className={styles.container}>
         <div className={styles.welcomeComponents}>
-          <h1 className={styles.welcomeH1}>
-            Welcome to the Photography Website
-          </h1>
+          <h1 className={styles.welcomeH1}>Welcome to Jay's Photography</h1>
           <p className={styles.welcomeP}>
-            Explore the captivating world of photography captured through our
-            lens. Witness breathtaking moments frozen in time.
+            Through My Lens, I Capture the Essence of Your Cars and the Joy in
+            Family Shoots, Creating Timeless Images
           </p>
         </div>
 
