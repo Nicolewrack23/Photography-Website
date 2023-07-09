@@ -4,6 +4,7 @@ import Welcome from "../Welcome/WelcomePage";
 import Gallery from "../Gallery/GalleryPage";
 import About from "../About/AboutPage";
 import Contact from "../Contact/ContactPage";
+import Footer from "../Footer/Footer";
 
 const SideMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +56,7 @@ const SideMenu = () => {
       <div className={styles.header}>
         <div className={styles.menuButton}>
           <div className={styles.nameGrid}>
-            <h1 className={styles.name}>Beach</h1>
+            <h1 className={styles.name}>Jay's Photography</h1>
           </div>
           <div className={styles.buttonGrid}>
             <button className={styles.buttonStyles} onClick={toggleMenu}>
@@ -118,6 +119,9 @@ const SideMenu = () => {
         </div>
         <div id="contact">
           <Contact />
+        </div>
+        <div id="footer">
+          <Footer />
         </div>
       </div>
     </>
