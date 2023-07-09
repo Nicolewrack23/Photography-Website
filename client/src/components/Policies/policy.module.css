@@ -1,0 +1,21 @@
+.container {
+  margin: 1rem;
+}
+.backButton {
+  text-decoration: none;
+  display: grid;
+  justify-content: center;
+  cursor: pointer;
+  width: 6rem;
+  padding: 0.5rem;
+  background: rgb(66, 125, 134);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 125, 134, 1) 35%,
+    rgba(12, 53, 91, 1) 100%
+  );
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.25rem;
+}
