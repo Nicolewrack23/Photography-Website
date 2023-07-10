@@ -8,7 +8,7 @@ import Footer from "../Footer/Footer";
 
 const SideMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState("welcome");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
