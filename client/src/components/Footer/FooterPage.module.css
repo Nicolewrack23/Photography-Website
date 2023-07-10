@@ -3,10 +3,21 @@
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+  background: rgba(11, 4, 4);
+  color: white;
 }
-
+.textStyling {
+  margin: 0.1rem;
+  font-size: 0.9rem;
+}
+.links {
+  color: white;
+}
 @media (min-width: 40rem) {
   .container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .textStyling {
+    margin: 1rem;
   }
 }
