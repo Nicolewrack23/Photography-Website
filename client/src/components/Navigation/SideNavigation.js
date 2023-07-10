@@ -16,7 +16,7 @@ const SideMenu = () => {
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
-    const menuHeight = 80;
+    const menuHeight = 85;
     if (section) {
       window.scrollTo({
         top: section.offsetTop - menuHeight,
