@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import styles from "./GalleryPage.module.css";
-import image from "./beach.jpeg";
-import skyImage from "./sky.jpeg";
+import image1 from "./Images/Image1.jpeg";
+import ImageContainerArt from "./Images/ImageContainerArt.jpeg";
+import ImageBlueCar from "./Images/ImageBlueCar.jpeg";
+import ImageMainfreight from "./Images/ImageMainfreight.jpeg";
+import ImagePeacock from "./Images/ImagePeacock.jpeg";
+import ImageHelmet from "./Images/ImageHelmet.jpeg";
+import ImagePaintball from "./Images/ImagePaintball.jpeg";
+import ImagePlaneWheel from "./Images/ImagePlaneWheel.jpeg";
+import ImageAirNZPlane from "./Images/ImageAirNZPlane.jpeg";
 
 const GalleryPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -20,15 +27,15 @@ const GalleryPage = () => {
   };
 
   const images = [
-    image,
-    skyImage,
-    image,
-    skyImage,
-    image,
-    skyImage,
-    image,
-    skyImage,
-    image,
+    ImageBlueCar,
+    ImageContainerArt,
+    ImageMainfreight,
+    ImagePeacock,
+    ImageHelmet,
+    ImagePaintball,
+    ImagePlaneWheel,
+    ImageAirNZPlane,
+    image1,
   ];
 
   return (
