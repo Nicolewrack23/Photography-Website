@@ -28,7 +28,7 @@
 .name {
   margin: 0;
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .nameGrid {
   justify-content: start;
@@ -46,10 +46,9 @@
 }
 .menu {
   color: black;
-  padding: 1rem;
   position: absolute;
   z-index: 1;
-  top: 4.9rem;
+  top: 4.4rem;
 }
 .grid {
   display: grid;
@@ -103,6 +102,9 @@
   .closed {
     display: none;
   }
+  .name {
+    font-size: 2rem;
+  }
   .menu {
     position: fixed;
     display: contents;
@@ -129,6 +131,9 @@
   }
   .leftAlign {
     width: 80%;
+  }
+  .name {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 120rem) {
