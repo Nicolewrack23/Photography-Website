@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import Image from "../Gallery/beach.jpeg";
+import Image from "../Gallery/Images/beach.jpeg";
 import styles from "./ContactPage.module.css";
 import emailjs from "@emailjs/browser";
 
