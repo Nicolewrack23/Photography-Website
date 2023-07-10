@@ -2,9 +2,13 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.25);
   z-index: 2;
+  background: rgba(11, 4, 4, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
 }
 .menuButton {
   display: grid;
@@ -12,7 +16,6 @@
   justify-items: center;
   justify-content: end;
   padding: 1rem;
-  background-color: white;
   position: sticky;
   top: 0;
 }
@@ -38,7 +41,8 @@
   font-size: 2rem;
   border: none;
   margin: 0 auto;
-  background-color: lightgray;
+  color: white;
+  background: none;
 }
 .menu {
   color: black;
@@ -65,7 +69,7 @@
 }
 .open,
 .closed {
-  background-color: lightgray;
+  background: rgba(11, 4, 4, 0.8);
   transition: width 2s, opacity 1s;
 }
 .menuItem {
@@ -74,13 +78,15 @@
   cursor: pointer;
 }
 .menuItem.active {
-  color: black;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #07a777;
   font-weight: bold;
 }
 .menuItem:hover {
-  color: black;
+  color: white;
   font-weight: bold;
-  border-bottom: 3px solid #6cabaf;
+  border-bottom: 3px solid #07a777;
   transition: border-bottom 0.5s;
 }
 .gradient {
